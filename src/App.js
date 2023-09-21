@@ -8,11 +8,13 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import NoteState from './context/notes/NoteState';
 
 function App() {
 
   return (
     <>
+    <NoteState>
       <Router>
         <Navbar />
         <Routes>
@@ -22,6 +24,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      </NoteState>
     </>
   );
 
