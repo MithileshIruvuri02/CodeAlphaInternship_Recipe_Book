@@ -23,7 +23,7 @@ const AddNote = () => {
         <form>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
-            <input type="text" className="form-control" id="title " name="title" aria-describedby="emailHelp" onChange={onChange} />
+            <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange={onChange} />
           </div>
           <div className="mb-3">
             <label htmlFor="description" className="form-label">Description</label>
@@ -33,7 +33,7 @@ const AddNote = () => {
             <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
             <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" className="btn btn-primary" onClick={handleClick}>Submit</button>
+          <button type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
         </form>
       </div>
     </div>
