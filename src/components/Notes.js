@@ -50,18 +50,18 @@ const Notes = (props) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Recipe</h1>
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Note</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
               <div className='container my-3'>
                 <form>
                   <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Food Name</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
                     <input type="text" className="form-control" id="etitle" name="etitle" value={note.etitle} aria-describedby="emailHelp" onChange={onChange} />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="description" className="form-label">Ingredients and Process</label>
+                    <label htmlFor="description" className="form-label">Description</label>
                     <input type="text" className="form-control" id="eescription" name="edescription" value={note.edescription} onChange={onChange} minLength={5} required />
                   </div>
                   <div className="mb-3">
@@ -73,13 +73,13 @@ const Notes = (props) => {
             </div>
             <div className="modal-footer">
               <button ref={refClose} type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button disabled={note.etitle.length < 5 || note.edescription.length < 5} onClick={handleClick} type="button" className="btn btn-primary">Update Recipe</button>
+              <button disabled={note.etitle.length < 5 || note.edescription.length < 5} onClick={handleClick} type="button" className="btn btn-primary">Update Note</button>
             </div>
           </div>
         </div>
       </div>
       <div className=' row my-3'>
-        <h3>Your Dishes</h3>
+        <h3>Your Notes</h3>
         <div className='conatiner mx-2'>
           {notes.length === 0 && "No Notes to display"}
         </div>
