@@ -4,7 +4,7 @@ import Notes from './Notes';
 const Home = (props) => {
 
   return (
-    <div>
+    <div className='bgimg'>
       <Notes showAlert={props.showAlert}></Notes>
     </div>
   )
