@@ -40,3 +40,7 @@ body{
  background-image: url(./components/bg3.jpg);
  background-size: cover;
 }
+.navbar,
+.modal-header{
+  background-color: rgb(255, 111, 0);
+}
