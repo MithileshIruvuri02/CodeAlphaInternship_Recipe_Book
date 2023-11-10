@@ -37,5 +37,6 @@
   }
 }
 body{
- background-color: rgb(207, 230, 244);
+ background-image: url(./components/bg3.jpg);
+ background-size: cover;
 }
